@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なんちゃって誕生日占い</title>
+    
+</head>
+<body>
+    <header>
+        <h1>最恐の占いサイト</h1>
+        <h2>作成者：世界に愛を</h2>
+    </header>
+    <main>
+        <div id="INPUT">
+        <p>西暦</p>
+        <input id="years" type="number">
+        <p>月</p>
+        <input id="month" type="number">
+        <p>日</p>
+        <input id="day" type="number">
+        <button type="button" id="btn">CLICK</button>
+        
+        </div>
+
+        <div id="OUTPUT">
+            <p>占い結果だぞーーー！！
+                <span id="txt">うふふ</span>
+            </p>
+        </div>
+
+
+    </main>
+
+    <h5>℗kouga.com</h5>
+
+    <script>
+        let INPUT = document.getElementById('INPUT');
+        let years = document.getElementById('years');
+        let month = document.getElementById('month');
+        let day = document.getElementById('day');
+        let btn = document.getElementById('btn');
+        let OUTPUT = document.getElementById('OUTPUT');
+        let txt = document.getElementById('txt');
+
+
+        btn.addEventListener('click',function() {click1()});
+
+        let a;
+
+        let lis1 = [
+            'good',
+            'bad',
+            'soundgood',
+            'fine',
+            'notgood',
+            'OMG'
+        ];
+
+        let result;
+    
+
+
+
+
+
+        console.log('start!')
+
+
+        function click1() {
+            console.log('clicked');
+            
+           
+            
+           
+
+
+            result = lis1[Math.floor(Math.random()*lis1.length)];
+
+            txt.innerHTML = result;
+            
+            console.log('result:',result);
+
+        }
+        
+
+
+    </script>
+
+    
+</body>
+</html>
